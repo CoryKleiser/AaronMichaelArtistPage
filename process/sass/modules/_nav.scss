@@ -17,6 +17,9 @@ nav{
         padding: 14px 16px;
         text-decoration: none;
         display:block;
+        &:hover{
+          text-decoration: none;
+        }
       }
       &:nth-child(3){
         border-right:none;
