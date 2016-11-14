@@ -1,0 +1,33 @@
+nav{
+  width:100%;
+  position: fixed;
+  z-index: 100;
+  ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+    background-color: $darkgrey;
+    li {
+      float: left;
+      border-right:1px solid $grey;
+      a {
+        color: $offwhite;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        display:block;
+      }
+      &:nth-child(3){
+        border-right:none;
+      }
+      &:last-of-type{
+        float: right;
+        border-right:none;
+      }
+      &:hover{
+        background-color: $orange;
+      }
+    }
+  }
+}

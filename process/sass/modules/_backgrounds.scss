@@ -1,0 +1,61 @@
+.background {
+  color: $color-main;
+  margin: 0 0;
+  width: 100%;
+  display: table;
+
+  .container {
+    display: table-cell;
+    vertical-align: bottom;
+    padding-bottom: 20px;
+
+    h1 {
+      color: $yellow;
+      font-family: $font-main;
+      font-size: 5rem;
+      line-height: 105%;
+      margin-bottom: 0;
+      padding: 0 10%;
+    }
+
+    p{
+      padding: 0 10%;
+      margin-top: 0;
+    }
+  }
+}
+
+body {
+  @include backImage(
+    '../images/acousticguitar.jpg'
+    );
+  background-attachment: fixed;
+}
+$media-bgcolor1:$lightblue;
+.jumbotron{
+  @include backColor(
+    $media-bgcolor1
+  );
+}
+$media-bgcolor2:hsla(0, 100%, 0, .6);
+$media-bgcolor3:hsla(0, 100%, 0, 1);
+#video{
+  @include backColor(
+    $media-bgcolor2,
+    $media-bgcolor3,
+    auto
+  );
+}
+#music{
+  @include backColor(
+    $media-bgcolor3,
+    $media-bgcolor2,
+    auto
+  );
+}
+#about {
+  @include backColor(
+    $media-bgcolor2,
+    $media-bgcolor1
+  )
+}

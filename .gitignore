@@ -1,0 +1,9 @@
+.DS_Store
+node_modules
+.idea
+.tmp
+.sass-cache
+images/**
+slides/**
+builds/sassEssentials/css/style.css
+npm-debug.log

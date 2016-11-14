@@ -1,0 +1,23 @@
+/*! Load Fonts */
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Archivo+Narrow|Merriweather|Proza+Libre|Quicksand|Roboto+Slab|Rubik');
+
+$black:     #000000;
+$offwhite:  #ffefff;
+$grey:      #bbb;
+$darkgrey:  #333;
+$darkblue:  #0e0a26;
+$yellow:    #fff426;
+$lightblue: hsla(201, 100%, 60%, .9);
+$blue:      #513ce5;
+$green:     #98fe6d;
+$orange:    #ffac26;
+$red:       #fa264b;
+$purple:    #8e30e3;
+
+
+$color-main: $offwhite;
+$color-backgrounds: $darkblue;
+$color-headlines: $green;
+
+$font-main: 'Archivo+Narrow', Helvetica, sans-serif;
+$font-highlight: 'Merriweather', Helvetica, sans-serif;
