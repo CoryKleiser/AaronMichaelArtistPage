@@ -115,35 +115,89 @@
   <div class="container">
       <img class="img-responsive" src="images/steps.png" alt="Picture of Aaron Perez">
     <h1>About</h1>
-      <p>
-          I'm from Arnold California.(By Lake Tahoe) I loved growing up there because the forest was my playground,
-          and there was always a new adventure around the corner, and beautiful scenery everywhere.
-          One of the first things I remember growing up was my mom playing guitar for me.
-          She would sing old folk songs to me when I was young.
-          My mom also bought me my first guitar when I was five.
-          I got in the school band when I was in the fifth grade and played the trumpet till high school.
-          When I was 16 I picked up the electric guitar.  I loved the electric guitar and the way it sounded.
-          My favorite guitar player in high school was Jimi Hendrix,
-          and I would sit and watch his videos over and over again until I learned his songs.
-          I also started writing my own music in high school. I loved putting combinations of chords,
-          and witty lyrics together in hopes that it would change the world. :)
-          I also had a great guitar teacher named Dave Freedman.
-          Dave grew up in Hawaii and played surf rock until he got a place in the band "Steppenwolf".
-          I am currently taking Electronic Media, and Commercial Music Production,
-          and voice classes at the University of Cincinnati College Conservatory of Music.
-      </p>
-      <p>
-          I really love performing and sharing my music with other people,
-          its really one of the greatest feelings in the world.
-          I currently play a solo acoustic guitar show,
-          even though I hope to start a band when I have time.
-      </p>
-        <button class="btn btn-hot">Experience</button>
-        <button class="btn btn-hot">Contact</button>
-        <button class="btn btn-hot">Bio</button>
+
+      <div class="panel-group" id="aboutPanels">
+          <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="experienceHeading">
+                  <h4 class="panel-title">
+                      <a href="#experience"
+                        data-toggle="collapse" data-parent="#aboutPanels"
+                        aria-expanded="false" aria-controls="experience">
+                          My Experience
+                      </a>
+                  </h4>
+              </div>
+              <div class="panel-collapse collapse" id="experience"
+                role="tabpanel" aria-labelledby="experienceHeading">
+                  <div class="panel-body">
+                      <p>
+                          Your relevant experience goes here.
+                      </p>
+                  </div>
+              </div>
+          </div>
+          <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="bioHeading">
+                  <h4 class="panel-title">
+                      <a href="#bio"
+                         data-toggle="collapse" data-parent="#aboutPanels"
+                         aria-expanded="false" aria-controls="bio">
+                          My Bio
+                      </a>
+                  </h4>
+              </div>
+              <div class="panel-collapse collapse" id="bio"
+                   role="tabpanel" aria-labelledby="bioHeading">
+                  <div class="panel-body">
+                      <p>
+                          I'm from Arnold California.(By Lake Tahoe) I loved growing up there because the forest was my playground,
+                          and there was always a new adventure around the corner, and beautiful scenery everywhere.
+                          One of the first things I remember growing up was my mom playing guitar for me.
+                          She would sing old folk songs to me when I was young.
+                          My mom also bought me my first guitar when I was five.
+                          I got in the school band when I was in the fifth grade and played the trumpet till high school.
+                          When I was 16 I picked up the electric guitar.  I loved the electric guitar and the way it sounded.
+                          My favorite guitar player in high school was Jimi Hendrix,
+                          and I would sit and watch his videos over and over again until I learned his songs.
+                          I also started writing my own music in high school. I loved putting combinations of chords,
+                          and witty lyrics together in hopes that it would change the world. :)
+                          I also had a great guitar teacher named Dave Freedman.
+                          Dave grew up in Hawaii and played surf rock until he got a place in the band "Steppenwolf".
+                          I am currently taking Electronic Media, and Commercial Music Production,
+                          and voice classes at the University of Cincinnati College Conservatory of Music.
+                      </p>
+                      <p>
+                          I really love performing and sharing my music with other people,
+                          its really one of the greatest feelings in the world.
+                          I currently play a solo acoustic guitar show,
+                          even though I hope to start a band when I have time.
+                      </p>
+                  </div>
+              </div>
+          </div>
+          <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="contactHeading">
+                  <h4 class="panel-title">
+                      <a href="#contact"
+                         data-toggle="collapse" data-parent="#aboutPanels"
+                         aria-expanded="false" aria-controls="contact">
+                          Contact Me
+                      </a>
+                  </h4>
+              </div>
+              <div class="panel-collapse collapse" id="contact"
+                   role="tabpanel" aria-labelledby="contactHeading">
+                  <div class="panel-body">
+                      <p>
+                          Your Contact Information Goes Here.
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
   </div>
 </section>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>

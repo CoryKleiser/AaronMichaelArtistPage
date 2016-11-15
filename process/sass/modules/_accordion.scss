@@ -1,0 +1,14 @@
+.panel{
+  background-color: hsla(0, 0%, 0%, .5);
+  border-color: $darkorange;
+  .panel-heading{
+    background-color: $orange;
+    a{
+      text-decoration: none;
+      display: block;
+    }
+    &:hover{
+      background-color: $darkorange;
+    }
+  }
+}

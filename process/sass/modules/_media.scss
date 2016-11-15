@@ -14,8 +14,8 @@ $color-media-head:  $blue;
     &:hover{
       background: $yellow;
     }
-    &:last-of-type {
-      border-bottom: 1px dotted $color-item-border;
+    &:first-of-type {
+      border-top: none;
     }
     @include clearfix;
     &.video{
