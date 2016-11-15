@@ -3,9 +3,11 @@
   border-color: $darkorange;
   .panel-heading{
     background-color: $orange;
+    padding:0;
     a{
       text-decoration: none;
       display: block;
+      padding:10px 15px;
     }
     &:hover{
       background-color: $darkorange;
