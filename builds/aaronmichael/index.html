@@ -41,10 +41,14 @@
 
 <div class="content">
     <section class="background jumbotron" id="jumbotron">
-      <div class="container">
-        <h1>Aaron Michael</h1>
-        <p>Singer  |  Songwriter  |  Engineer  |  Artist</p>
-      </div>
+        <section class="container">
+            <div id="intro">
+                <p>
+                    <img src="images/logo.png" alt="Aaron Michael">
+                </p>
+                <p class="">Singer  |  Songwriter  |  Musician  |  Artist</p>
+            </div>
+        </section>
     </section>
 
     <section id="video">
@@ -127,37 +131,9 @@
     <section id="about" class="background">
       <div class="container">
         <h1>About</h1>
-
+          <img class="img-responsive" src="images/steps.png" alt="Picture of Aaron Perez">
           <div class="panel-group" id="aboutPanels">
               <div class="panel panel-default">
-                  <div class="panel-heading" role="tab" id="experienceHeading">
-                      <h4 class="panel-title">
-                          <a href="#experience"
-                            data-toggle="collapse" data-parent="#aboutPanels"
-                            aria-expanded="false" aria-controls="experience">
-                              My Experience
-                          </a>
-                      </h4>
-                  </div>
-                  <div class="panel-collapse collapse" id="experience"
-                    role="tabpanel" aria-labelledby="experienceHeading">
-                      <div class="panel-body">
-                          <p>
-                              Your relevant experience goes here.
-                          </p>
-                      </div>
-                  </div>
-              </div>
-              <div class="panel panel-default">
-                  <div class="panel-heading" role="tab" id="bioHeading">
-                      <h4 class="panel-title">
-                          <a href="#bio"
-                             data-toggle="collapse" data-parent="#aboutPanels"
-                             aria-expanded="false" aria-controls="bio">
-                              My Bio
-                          </a>
-                      </h4>
-                  </div>
                   <div class="panel-collapse collapse" id="bio"
                        role="tabpanel" aria-labelledby="bioHeading">
                       <div class="panel-body">
@@ -186,8 +162,25 @@
                           </p>
                       </div>
                   </div>
+                  <div class="panel-heading" role="tab" id="bioHeading">
+                      <h4 class="panel-title">
+                          <a href="#bio"
+                             data-toggle="collapse" data-parent="#aboutPanels"
+                             aria-expanded="false" aria-controls="bio">
+                              My Bio
+                          </a>
+                      </h4>
+                  </div>
               </div>
               <div class="panel panel-default">
+                  <div class="panel-collapse collapse" id="contact"
+                       role="tabpanel" aria-labelledby="contactHeading">
+                      <div class="panel-body">
+                          <p>
+                              Your Contact Information Goes Here.
+                          </p>
+                      </div>
+                  </div>
                   <div class="panel-heading" role="tab" id="contactHeading">
                       <h4 class="panel-title">
                           <a href="#contact"
@@ -197,17 +190,8 @@
                           </a>
                       </h4>
                   </div>
-                  <div class="panel-collapse collapse" id="contact"
-                       role="tabpanel" aria-labelledby="contactHeading">
-                      <div class="panel-body">
-                          <p>
-                              Your Contact Information Goes Here.
-                          </p>
-                      </div>
-                  </div>
               </div>
           </div>
-          <img class="img-responsive" src="images/steps.png" alt="Picture of Aaron Perez">
       </div>
     </section>
 </div>
