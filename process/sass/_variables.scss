@@ -1,24 +1,28 @@
 /*! Load Fonts */
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC|Archivo+Narrow|Merriweather|Proza+Libre|Quicksand|Roboto+Slab|Rubik');
 
-$black:     #000000;
-$offwhite:  #ffefff;
-$grey:      #bbb;
-$darkgrey:  #333;
-$darkblue:  #0e0a26;
-$yellow:    #fff426;
-$lightblue: hsla(201, 100%, 60%, .9);
-$blue:      #513ce5;
-$green:     #98fe6d;
-$orange:    #ffac26;
-$darkorange:#b36200;
-$red:       #fa264b;
-$purple:    #8e30e3;
+$black:         #000000;
+$offwhite:      #fdfff8;
+$grey:          #bbb;
+$darkgrey:      #333;
+$darkblue:      #0e0a26;
+$yellow:        #fff426;
+$lighterblue:   #3ddbff;
+$lightblue:     hsla(201, 100%, 60%, .9);
+$blue:          #513ce5;
+$green:         #98fe6d;
+$orange:        #ffac26;
+$darkorange:    #b36200;
+$red:           #fa264b;
+$magenta:       #873b3a;
+$lightmagenta:  #c08488;
+$purple:        #8e30e3;
 
 
-$color-main: $offwhite;
-$color-backgrounds: $darkblue;
-$color-headlines: $green;
+$color-main:              $offwhite;
+$color-backgrounds:       $lightblue;
+$color-headlines-main:    $lightmagenta;
+$color-headlines-other:   $lighterblue;
 
 $font-main: 'Archivo+Narrow', Helvetica, sans-serif;
 $font-highlight: 'Merriweather', Helvetica, sans-serif;

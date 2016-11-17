@@ -32,3 +32,16 @@ $color-btn-cool: $blue;
   @extend .btn;
   background: $color-btn-cool;
 }
+
+a{
+  text-decoration: none;
+  color: $color-main;
+  &:hover{
+    text-decoration: none;
+    color: $color-main;
+  }
+  &:focus{
+    text-decoration: none;
+    color: $color-main;
+  }
+}

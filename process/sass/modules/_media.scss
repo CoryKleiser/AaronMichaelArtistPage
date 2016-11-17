@@ -1,5 +1,5 @@
 $color-item-border: $red;
-$color-media-head:  $blue;
+$color-media-head:  $offwhite;
 
 .media{
   margin: 0;
@@ -10,9 +10,11 @@ $color-media-head:  $blue;
     padding-bottom: 10px;
     padding-top: 10px;
     padding-left: 10px;
+    margin: 15px 0 10px;
     border-top: 1px dotted $color-item-border;
+
     &:hover{
-      background: $orange;
+      background: $magenta;
     }
     &:first-of-type {
       border-top: none;
@@ -50,4 +52,8 @@ $color-media-head:  $blue;
   width:100%;
   margin-left:auto;
   margin-right:auto;
+}
+
+#steps-img{
+  max-width: 845px;
 }

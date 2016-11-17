@@ -51,9 +51,9 @@
         </section>
     </section>
 
-    <section id="video">
+    <section id="video" class="background">
         <div class="container">
-            <h1>My Videos</h1>
+            <h1 class="content-header">My Videos</h1>
     <ul class="media">
         <li class="item video col-md-6">
             <div class="embed-responsive embed-responsive-16by9">
@@ -88,11 +88,11 @@
         </div>
     </section>
 
-    <section id="music">
+    <section id="music" class="background">
         <div class="container">
-            <h1>My Music</h1>
+            <h1 class="content-header">My Music</h1>
             <div class="col-lg-6">
-                <h2>Acoustic</h2>
+                <h2 class="text-center">Acoustic</h2>
                 <ol class="media">
                 <li class="item">
                     <h3 class="head">Life Goes On | Alien Song</h3>
@@ -109,7 +109,7 @@
             </ol>
             </div>
             <div class="col-lg-6">
-                <h2>Rock</h2>
+                <h2 class="text-center">Rock</h2>
                 <ol class="media">
                         <li class="item">
                             <h3 class="head">Broken Fragments</h3>
@@ -130,37 +130,40 @@
 
     <section id="about" class="background">
       <div class="container">
-        <h1>About</h1>
-          <img class="img-responsive" src="images/steps.png" alt="Picture of Aaron Perez">
+        <h1 class="content-header">About</h1>
+          <img id="steps-img" class="img-responsive" src="images/steps.png" alt="Picture of Aaron Perez">
           <div class="panel-group" id="aboutPanels">
               <div class="panel panel-default">
                   <div class="panel-collapse collapse" id="bio"
                        role="tabpanel" aria-labelledby="bioHeading">
-                      <div class="panel-body">
-                          <p>
-                              I'm from Arnold California.(By Lake Tahoe) I loved growing up there because the forest was my playground,
-                              and there was always a new adventure around the corner, and beautiful scenery everywhere.
-                              One of the first things I remember growing up was my mom playing guitar for me.
-                              She would sing old folk songs to me when I was young.
-                              My mom also bought me my first guitar when I was five.
-                              I got in the school band when I was in the fifth grade and played the trumpet till high school.
-                              When I was 16 I picked up the electric guitar.  I loved the electric guitar and the way it sounded.
-                              My favorite guitar player in high school was Jimi Hendrix,
-                              and I would sit and watch his videos over and over again until I learned his songs.
-                              I also started writing my own music in high school. I loved putting combinations of chords,
-                              and witty lyrics together in hopes that it would change the world. :)
-                              I also had a great guitar teacher named Dave Freedman.
-                              Dave grew up in Hawaii and played surf rock until he got a place in the band "Steppenwolf".
-                              I am currently taking Electronic Media, and Commercial Music Production,
-                              and voice classes at the University of Cincinnati College Conservatory of Music.
-                          </p>
-                          <p>
-                              I really love performing and sharing my music with other people,
-                              its really one of the greatest feelings in the world.
-                              I currently play a solo acoustic guitar show,
-                              even though I hope to start a band when I have time.
-                          </p>
-                      </div>
+                      <button data-target="#bio" data-toggle="collapse" data-parent="#aboutPanels"
+                         aria-expanded="false" aria-controls="bio">
+                          <div class="panel-body">
+                              <p>
+                                  I'm from Arnold California.(By Lake Tahoe) I loved growing up there because the forest was my playground,
+                                  and there was always a new adventure around the corner, and beautiful scenery everywhere.
+                                  One of the first things I remember growing up was my mom playing guitar for me.
+                                  She would sing old folk songs to me when I was young.
+                                  My mom also bought me my first guitar when I was five.
+                                  I got in the school band when I was in the fifth grade and played the trumpet till high school.
+                                  When I was 16 I picked up the electric guitar.  I loved the electric guitar and the way it sounded.
+                                  My favorite guitar player in high school was Jimi Hendrix,
+                                  and I would sit and watch his videos over and over again until I learned his songs.
+                                  I also started writing my own music in high school. I loved putting combinations of chords,
+                                  and witty lyrics together in hopes that it would change the world. :)
+                                  I also had a great guitar teacher named Dave Freedman.
+                                  Dave grew up in Hawaii and played surf rock until he got a place in the band "Steppenwolf".
+                                  I am currently taking Electronic Media, and Commercial Music Production,
+                                  and voice classes at the University of Cincinnati College Conservatory of Music.
+                              </p>
+                              <p>
+                                  I really love performing and sharing my music with other people,
+                                  its really one of the greatest feelings in the world.
+                                  I currently play a solo acoustic guitar show,
+                                  even though I hope to start a band when I have time.
+                              </p>
+                          </div>
+                      </button>
                   </div>
                   <div class="panel-heading" role="tab" id="bioHeading">
                       <h4 class="panel-title">
@@ -175,26 +178,29 @@
               <div class="panel panel-default">
                   <div class="panel-collapse collapse" id="contact"
                        role="tabpanel" aria-labelledby="contactHeading">
-                      <div class="container-fluid panel-body">
-                          <ul class="list-unstyled list-inline">
-                              <li class="col-xs-3">
-                                  <a href="mailto:aarnen13@icloud.com">
-                                      <img class="center-block" src="images/mail.png" alt="Email Me!"></a>
-                              </li>
-                              <li class="col-xs-3">
-                                  <a href="https://www.facebook.com/pages/Aaron-Michael/731689246908806">
-                                      <img class="center-block" src="images/fb.png" alt="Like My Facebook Page"></a>
-                              </li>
-                              <li class="col-xs-3">
-                                  <a href="http://instagram.com/aaron__michaell">
-                                      <img class="center-block" src="images/insta.png" alt="Follow Me On Instagram"></a>
-                              </li>
-                              <li class="col-xs-3">
-                                  <a href="https://soundcloud.com/aarin_michael">
-                                    <img class="center-block" src="images/soundcloud.png" alt="Check Out My Soundcloud"></a>
-                              </li>
-                          </ul>
-                      </div>
+                      <button  class="btn-block" data-target="#contact" data-toggle="collapse" data-parent="#aboutPanels"
+                         aria-expanded="false" aria-controls="contact">
+                        <div class="container-fluid panel-body">
+                              <ul class="list-unstyled list-inline">
+                                  <li class="col-xs-3">
+                                      <a href="mailto:aarnen13@icloud.com" target="_blank">
+                                          <img class="center-block" src="images/mail.png" alt="Email Me!"></a>
+                                  </li>
+                                  <li class="col-xs-3">
+                                      <a href="https://www.facebook.com/pages/Aaron-Michael/731689246908806" target="_blank">
+                                          <img class="center-block" src="images/fb.png" alt="Like My Facebook Page"></a>
+                                  </li>
+                                  <li class="col-xs-3">
+                                      <a href="http://instagram.com/aaron__michaell" target="_blank">
+                                          <img class="center-block" src="images/insta.png" alt="Follow Me On Instagram"></a>
+                                  </li>
+                                  <li class="col-xs-3">
+                                      <a href="https://soundcloud.com/aarin_michael" target="_blank">
+                                        <img class="center-block" src="images/soundcloud.png" alt="Check Out My Soundcloud"></a>
+                                  </li>
+                              </ul>
+                        </div>
+                      </button>
                   </div>
                   <div class="panel-heading" role="tab" id="contactHeading">
                       <h4 class="panel-title">
