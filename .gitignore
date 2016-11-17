@@ -7,3 +7,5 @@ images/**
 slides/**
 builds/sassEssentials/css/style.css
 npm-debug.log
+builds/aaronmichael/sitemap.xml
+builds/aaronmichael/robots.txt

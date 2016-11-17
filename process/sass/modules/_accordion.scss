@@ -1,5 +1,6 @@
 .panel{
-  background-color: hsla(0, 0%, 0%, .5);
+  background-color: hsla(0, 0%, 100%, .5);
+  color: $black;
   border-color: $magenta;
   .panel-heading{
     background-color: $lightmagenta;

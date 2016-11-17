@@ -3,10 +3,14 @@
 }
 @media screen and (max-width: 767px) {
   #intro{
+    padding: 0;
     img{
       width: 100%;
       margin-left: auto;
       margin-right: auto;
+    }
+    p{
+      text-align: center;
     }
   }
 }
