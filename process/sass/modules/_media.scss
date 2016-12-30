@@ -27,6 +27,7 @@ $color-media-head:  $offwhite;
 
   .head {
     margin: 0;
+    position: relative;
     padding: 0 0 10px;
     color: $color-media-head;
     font-size: 2.2rem;
@@ -41,10 +42,14 @@ $color-media-head:  $offwhite;
   img{
     float: left;
     margin-right: 10px;
+    padding:15px;
   }
   a {
     text-decoration: none;
-    color: $color-main;
+    color: $darkgrey;
+  }
+  .audio-element{
+    margin:0 0 20px 0;
   }
 }
 

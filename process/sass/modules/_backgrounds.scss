@@ -39,19 +39,25 @@ $media-bgcolor1:$lightblue;
 }
 $media-bgcolor2:hsla(0, 100%, 0, .6);
 $media-bgcolor3:hsla(0, 100%, 0, 1);
-#video{
+#promo {
   @include backColor(
     $media-bgcolor2,
     $media-bgcolor3,
     auto
   );
 }
-#music{
+#video {
   @include backColor(
     $media-bgcolor3,
-    $media-bgcolor2,
+    $media-bgcolor3,
     auto
   );
+}
+#music {
+  @include backColor(
+    $media-bgcolor3,
+    $media-bgcolor2
+  )
 }
 #about {
   @include backColor(
