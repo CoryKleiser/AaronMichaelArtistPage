@@ -38,7 +38,7 @@ $media-bgcolor1:$lightblue;
   );
 }
 $media-bgcolor2:hsla(0, 100%, 0, .6);
-$media-bgcolor3:hsla(0, 100%, 0, 1);
+$media-bgcolor3:hsla(0, 100%, 0, .8);
 #promo {
   @include backColor(
     $media-bgcolor2,

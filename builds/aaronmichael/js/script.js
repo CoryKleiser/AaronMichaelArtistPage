@@ -18,4 +18,8 @@ $(document).ready(function () {
         }
     }
     setNavbarToggle();
+
+
+    //Activate tooltip
+    $('[data-toggle="tooltip"]').tooltip();
 });

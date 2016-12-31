@@ -13,9 +13,6 @@ $color-media-head:  $offwhite;
     margin: 15px 0 10px;
     border-top: 1px dotted $color-item-border;
 
-    &:hover{
-      background: $magenta;
-    }
     &:first-of-type {
       border-top: none;
     }
