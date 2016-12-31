@@ -12,6 +12,8 @@
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
           crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body data-spy="scroll" data-target=".navbar-default" data-offset="125">
 <header>
@@ -70,8 +72,9 @@
                             </div>
                             <div class="col-sm-8 col-md-7">
                                 <h2 class="head">Alien Preview</h2>
-                                <audio src="audio/AlienDemo.mp3" type="audio/mp3"
-                                       class="audio-element img-responsive"></audio>
+                                    <audio controls>
+                                        <source src="audio/AlienDemo.mp3" type="audio/mpeg">
+                                    </audio>
                                 <span>The full song will be available on iTunes January 13, 2017.
                                     <br>You can pre-order the song January 1 by following the link below</span>
                                 <br>
@@ -129,18 +132,10 @@
             <div class="col-lg-6">
                 <h2 class="text-center">Acoustic</h2>
                 <ol class="media">
-                <!--<li class="item">-->
-                    <!--<h3 class="head">Life Goes On | Alien Song</h3>-->
-                    <!--<iframe width="100%" height="75" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/271142182&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=true"></iframe>-->
-                <!--</li>-->
                 <li class="item">
                     <h3 class="head">River of Lost Dreams</h3>
                     <iframe width="100%" height="75" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/271142431&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=true"></iframe>
                 </li>
-                <!--<li class="item">-->
-                    <!--<h3 class="head">On Top of The Mountain</h3>-->
-                    <!--<iframe width="100%" height="75" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/207990296&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=true"></iframe>-->
-                <!--</li>-->
             </ol>
             </div>
             <div class="col-lg-6">
@@ -252,9 +247,7 @@
     </section>
 </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="mediaelement/mediaelement-and-player.min.js"></script>
-    <script src="mediaelement/mediaelement.js"></script>
+
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
