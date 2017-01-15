@@ -1,16 +1,16 @@
 .panel{
   background-color: hsla(0, 0%, 100%, .5);
   color: $black;
-  border-color: $magenta;
+  border-color: darken($accordian-color, 15%);
   .panel-heading{
-    background-color: $lightmagenta;
+    background-color: $accordian-color;
     padding:0;
     a{
       display: block;
       padding:10px 15px;
     }
     &:hover{
-      background-color: $magenta;
+      background-color: darken($accordian-color, 15%);
     }
   }
   button{

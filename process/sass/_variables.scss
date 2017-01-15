@@ -10,7 +10,7 @@ $yellow:        #fff426;
 $lighterblue:   #3ddbff;
 $lightblue:     hsla(201, 100%, 60%, .9);
 $blue:          #513ce5;
-$green:         #3ce319;
+$green:         #08ff49;
 $orange:        #ffac26;
 $darkorange:    #b36200;
 $red:           #fa264b;
@@ -23,6 +23,8 @@ $color-main:              $offwhite;
 $color-backgrounds:       $lightblue;
 $color-headlines-main:    darken($lighterblue, 15%);
 $color-headlines-other:   $lighterblue;
+
+$accordian-color:         darken($green, 15%);
 
 $font-main: 'Archivo+Narrow', Helvetica, sans-serif;
 $font-highlight: 'Merriweather', Helvetica, sans-serif;
