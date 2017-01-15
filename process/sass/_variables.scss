@@ -21,7 +21,7 @@ $purple:        #8e30e3;
 
 $color-main:              $offwhite;
 $color-backgrounds:       $lightblue;
-$color-headlines-main:    darken(complement($lighterblue), 15%);
+$color-headlines-main:    darken($lighterblue, 15%);
 $color-headlines-other:   $lighterblue;
 
 $font-main: 'Archivo+Narrow', Helvetica, sans-serif;
