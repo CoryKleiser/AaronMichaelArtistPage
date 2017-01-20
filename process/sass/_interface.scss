@@ -11,7 +11,7 @@ $color-btn-cool: $blue;
   white-space: nowrap;
   vertical-align: middle;
   cursor: pointer;
-  border: none;
+  border: 1px solid $color-main;
   border-radius: 4px;
   font-family: $font-highlight;
   user-select: none;
@@ -20,18 +20,16 @@ $color-btn-cool: $blue;
 
 .btn-default{
   @extend .btn;
-  background: $color-btn-default;
+  background: $btn-color;
+  &:focus{
+    @extend .btn-default;
+  }
+  &:hover, &:active, &:active:focus{
+    background-color: darken($btn-color, 10%);
+    color: $grey;
+  }
 }
 
-.btn-hot{
-  @extend .btn;
-  background: $color-btn-hot;
-}
-
-.btn-cool{
-  @extend .btn;
-  background: $color-btn-cool;
-}
 a{
   text-decoration: none;
   color: $color-main;

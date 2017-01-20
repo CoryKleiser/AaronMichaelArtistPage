@@ -13,6 +13,10 @@ $color-media-head:  $offwhite;
     margin: 15px 0 10px;
     border-top: 1px dotted $color-item-border;
 
+    .ad{
+      padding:5px;
+    }
+
     &:first-of-type {
       border-top: none;
     }
