@@ -9,17 +9,20 @@ $(document).ready(function () {
     function setNavbarToggle() {
         var $viewportWidth = $(window).width();
 
-        console.log($viewportWidth);
-
         if ($viewportWidth < 768) {
             $('ul.nav').children()
                 .attr('data-toggle', 'collapse')
                 .attr('data-target', '#navbar');
         }
+        else {
+            $('ul.nav').children()
+                .attr('data-toggle', 'none')
+                .attr('data-target', 'none');
+        }
     }
     setNavbarToggle();
 
-
-    //Activate tooltip
-    $('[data-toggle="tooltip"]').tooltip();
+    $(window).resize(function(e){
+        setNavbarToggle();
+    });
 });
