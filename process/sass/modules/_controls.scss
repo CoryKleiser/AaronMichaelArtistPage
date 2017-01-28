@@ -1,0 +1,14 @@
+.ap-controls{
+  margin: $border-radius;
+  text-align: center;
+  width: 100%;
+  .ap-navigation {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: inline;
+    .ap-togglePlay, .ap-back10, .ap-skip10 {
+      @include btn();
+    }
+  }
+}

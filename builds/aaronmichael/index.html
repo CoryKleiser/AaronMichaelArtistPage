@@ -17,6 +17,7 @@
         ga('send', 'pageview');
 
     </script>
+    <script src="https://npmcdn.com/rxjs@5.0.0-beta.1/bundles/Rx.umd.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
           crossorigin="anonymous">
@@ -77,9 +78,7 @@
                         </div>
                         <div class="col-sm-8 col-md-7">
                             <h2 class="head">Alien Preview</h2>
-                                <audio controls>
-                                    <source src="audio/AlienDemo.mp3" type="audio/mpeg">
-                                </audio>
+                            <audio src="audio/AlienDemo.mp3" type="audio/mpeg"></audio>
                             <span>The full song is available on iTunes.
                                 <br>Follow the links below to listen today.</span>
                             <br>
@@ -144,26 +143,26 @@
             <div class="col-lg-6">
                 <h2 class="text-center">Acoustic</h2>
                 <ol class="media">
-                <li class="item">
-                    <h3 class="head">River of Lost Dreams</h3>
-                    <iframe width="100%" height="75" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/271142431&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=true"></iframe>
-                </li>
-            </ol>
+                    <li class="item">
+                        <h3 class="head">River of Lost Dreams</h3>
+                        <audio src="audio/riveroflostdreams-aaronmichael.mp3" type="audio/mpeg"></audio>
+                    </li>
+                    <li class="item">
+                        <h3 class="head">Temple of the Sun</h3>
+                        <audio src="audio/templesun-aaronmichael.mp3" type="audio/mpeg"></audio>
+                    </li>
+                </ol>
             </div>
             <div class="col-lg-6">
                 <h2 class="text-center">Rock</h2>
                 <ol class="media">
                         <li class="item">
                             <h3 class="head">Broken Fragments</h3>
-                            <iframe width="100%" height="75" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/202604608&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=true"></iframe>
+                            <audio src="audio/bassbotshort.mp3" type="audio/mpeg"></audio>
                         </li>
                         <li class="item">
                             <h3 class="head">Airplane</h3>
-                            <iframe width="100%" height="75" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/27700265&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=true"></iframe>
-                        </li>
-                        <li class="item">
-                            <h3 class="head">I Can't Sleep</h3>
-                            <iframe width="100%" height="75" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/245492871&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=true"></iframe>
+                            <audio src="audio/airplane-aaronmichael.mp3" type="audio/mpeg"></audio>
                         </li>
                     </ol>
             </div>
@@ -264,5 +263,6 @@
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
+    <script src="js/KleiserAudioPlayer.js"></script>
     <!-- Go to www.addthis.com/dashboard to customize your tools -->
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-588bbe98453fd2ce"></script>

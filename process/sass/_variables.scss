@@ -3,6 +3,7 @@
 
 $black:         #000000;
 $offwhite:      #fdfff8;
+$lightgray      : #819090;
 $grey:          #bbb;
 $darkgrey:      #333;
 $darkblue:      #0e0a26;
@@ -23,6 +24,13 @@ $color-main:              $offwhite;
 $color-backgrounds:       $lightblue;
 $color-headlines-main:    darken($lighterblue, 15%);
 $color-headlines-other:   $lighterblue;
+
+$player-color-main:              $lightgray;
+$player-color-backgrounds:       $darkgrey;
+$player-color-interface:         darken($green, 25%);
+
+
+$border-radius: 5px;
 
 $btn-color:         darken($green, 25%);
 

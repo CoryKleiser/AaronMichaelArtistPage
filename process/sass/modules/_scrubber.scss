@@ -1,0 +1,20 @@
+.ap-scrubberContainer{
+  display: block;
+  width: 90%;
+  height: 10px;
+  margin: 10px auto 0;
+
+  background-color: $player-color-main;
+  .ap-scrubberBar{
+    display: inline;
+    width: 100%;
+    height:inherit;
+    .ap-scrubber{
+      display: inline-block;
+      text-align: center;
+      height:inherit;
+      color: $player-color-interface;
+      background-color: $player-color-interface;
+    }
+  }
+}
