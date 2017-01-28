@@ -24,7 +24,7 @@
 
         //set up button
         var playPause = document.getElementsByClassName('ap-togglePlay')[i];
-        playPause.innerHTML = '&#9654;';
+        playPause.innerHTML = '&#9658';
         var togglePlayPause = Rx.Observable.fromEvent(playPause, 'click');
         /**
          * toggle play/pause track
@@ -38,7 +38,7 @@
                 playPause.innerHTML = '&#10073;&#10073;';
             } else {
                 audio.pause();
-                playPause.innerHTML = '&#9654;';
+                playPause.innerHTML = '&#9658';
             }
         });
 
@@ -85,7 +85,7 @@
             audio.percentPlayed = audio.currentTime / audio.duration * 100;
             currentPosition.setAttribute('style', 'width: ' + audio.percentPlayed + '%');
             if (audio.percentPlayed === 100) {
-                playPause.innerHTML = '&#9654;';
+                playPause.innerHTML = '&#9658;';
             }
         };
 
