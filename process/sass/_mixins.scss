@@ -38,7 +38,7 @@
   background-clip: padding-box;
 }
 
-@mixin btn ($border: none, $fontsize: 1.25em, $color: $player-color-interface){
+@mixin btn ($border: none, $fontsize: 1em, $color: $player-color-interface){
   display: inline-block;
   background: transparent;
   border: $border;
