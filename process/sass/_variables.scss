@@ -12,6 +12,7 @@ $lighterblue:   #3ddbff;
 $lightblue:     hsla(201, 100%, 60%, .9);
 $blue:          #513ce5;
 $green:         #08ff49;
+$darkgreen:     darken($green, 25%);
 $orange:        #ffac26;
 $darkorange:    #b36200;
 $red:           #fa264b;
@@ -22,17 +23,18 @@ $purple:        #8e30e3;
 
 $color-main:              $offwhite;
 $color-backgrounds:       $lightblue;
-$color-headlines-main:    darken($lighterblue, 15%);
+$color-headlines-main:    $darkgreen;
 $color-headlines-other:   $lighterblue;
 
 $player-color-main:              $lightgray;
 $player-color-backgrounds:       $darkgrey;
-$player-color-interface:         darken($green, 25%);
+$player-color-interface:         $darkgreen;
+$player-color-border:            $darkgreen;
 
 
 $border-radius: 5px;
 
-$btn-color:         darken($green, 25%);
+$btn-color:         $darkgreen;
 
 $font-main: 'Archivo+Narrow', Helvetica, sans-serif;
 $font-highlight: 'Merriweather', Helvetica, sans-serif;
