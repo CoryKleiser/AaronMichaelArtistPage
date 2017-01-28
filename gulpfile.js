@@ -1,5 +1,7 @@
 var gulp = require('gulp'),
     jshint = require('gulp-jshint'),
+    concat = require('gulp-concat'),
+    uglify = require('gulp-uglify'),
     sass = require('gulp-ruby-sass'),
     sourcemaps = require('gulp-sourcemaps'),
     webserver = require('gulp-webserver');
@@ -22,6 +24,13 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('builds/aaronmichael/css'));
 });
 
+gulp.task('scripts', function () {
+    return gulp.src('process/js/*.js')
+        .pipe(concat('bundle.js'))
+        .pipe(uglify())
+        .pipe(gulp.dest('builds/aaronmichael/js'))
+});
+
 gulp.task('watch', function() {
   gulp.watch('builds/aaronmichael/js/**/*', ['js']);
   gulp.watch(['process/sass/**/*'], ['sass']);
@@ -35,4 +44,4 @@ gulp.task('webserver', function() {
         }));
 });
 
-gulp.task('default', ['sass', 'watch', 'webserver']);
+gulp.task('default', ['sass', 'scripts', 'watch', 'webserver']);
