@@ -4,5 +4,6 @@
   margin-left: auto;
   margin-right: auto;
   border: 1px solid $player-color-border;
+  padding-top: 5px;
   @include rounded();
 }
