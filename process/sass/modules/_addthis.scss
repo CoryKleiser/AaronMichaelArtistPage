@@ -1,0 +1,11 @@
+#at4-share3, #at-share-dock2, #at-share-dock3{
+  display: none;
+}
+@media screen and (max-width: $xs-breakpoint){
+  #at4-share{
+    display: none;
+  }
+  #at-share-dock2{
+    display: block;
+  }
+}

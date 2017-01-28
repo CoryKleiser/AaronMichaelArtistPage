@@ -25,4 +25,11 @@ $(document).ready(function () {
     $(window).resize(function(e){
         setNavbarToggle();
     });
+
+    $(window).on('load', function () {
+        $('#at4-share3').remove();
+        $('#at-share-dock3').remove();
+        console.log('load');
+
+    });
 });
