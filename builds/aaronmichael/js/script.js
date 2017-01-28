@@ -21,7 +21,7 @@ $(document).ready(function () {
         }
     }
     setNavbarToggle();
-
+    $('[data-toggle="tooltip"]').tooltip();
     $(window).resize(function(e){
         setNavbarToggle();
     });
