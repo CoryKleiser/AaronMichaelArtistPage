@@ -10,7 +10,9 @@
     display: inline;
     .ap-togglePlay, .ap-back10, .ap-skip10 {
       @include btn();
-      height: 27px;
+      &:hover{
+        color: lighten($darkgreen, 10%);
+      }
     }
   }
 }
