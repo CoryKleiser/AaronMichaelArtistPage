@@ -47,3 +47,9 @@
   color: $color;
   font-size: $fontsize;
 }
+
+@mixin interactiveOpacity ($opacity: .6){
+  & + a img {
+    opacity: $opacity;
+  }
+}

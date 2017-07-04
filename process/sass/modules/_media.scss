@@ -15,6 +15,11 @@ $color-media-head:  $offwhite;
 
     .ad{
       padding:5px;
+      a{
+        &:hover{
+            @include interactiveOpacity();
+        }
+      }
       img{
         padding: 0;
         @include rounded(20%);
