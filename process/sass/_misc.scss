@@ -1,0 +1,10 @@
+#icons-container{
+  position: relative;
+  top:30px;
+}
+.icon{
+  max-width:75px;
+  &:hover{
+    opacity: .5;
+  }
+}
