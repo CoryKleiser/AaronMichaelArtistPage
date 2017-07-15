@@ -14,7 +14,7 @@ $color-media-head:  $offwhite;
     border-top: 1px dotted $color-item-border;
 
     .ad{
-      padding:5px;
+      padding:30px 5px 5px;
       a{
         &:hover{
             @include interactiveOpacity();
