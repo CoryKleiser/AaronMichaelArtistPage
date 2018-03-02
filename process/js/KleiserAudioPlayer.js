@@ -1,3 +1,5 @@
+'use strict';
+
 (function () {
     'use strict';
     //vars
@@ -8,6 +10,16 @@
 
     var insertAfter = function insertAfter(newNode, referenceNode) {
         return referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
+    };
+
+    var ff = function ff(track) {
+        if (track.playbackRate < 4) {
+            track.playbackRate += 1;
+            console.log(track.playbackRate);
+        } else {
+            track.playbackRate = 1;
+            console.log(track.playbackRate);
+        }
     };
 
     var i = 0;
@@ -65,10 +77,10 @@
         /**
          * fast forward
          */
-            // const fastForward = Rx.Observable.fromEvent(skip10, 'click');
-            // fastForward.forEach((e) => ff(audio));
+        // const fastForward = Rx.Observable.fromEvent(skip10, 'click');
+        // fastForward.forEach((e) => ff(audio));
 
-            //set up scrubber
+        //set up scrubber
         var scrubberBox = document.getElementsByClassName('ap-scrubberContainer')[i];
         var scrubber = document.getElementsByClassName('ap-scrubberBar')[i];
         var scrubberHover = document.getElementsByClassName('ap-scrubberMouseover')[i];
@@ -85,22 +97,24 @@
             console.log(audio.buffer);
         };
 
-        /**
-         * animate scrubber on mouseover
-         */
-        scrubberMousemoves.forEach(function (e) {
-            var rect = scrubberBox.getBoundingClientRect();
-            var mousePosition = (e.clientX - rect.left) / rect.width * 100;
-            console.log(mousePosition);
-            scrubberHover.setAttribute('style', 'width: ' + mousePosition + '%');
-        });
+        if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            /**
+             * animate scrubber on mouseover
+             */
+            scrubberMousemoves.forEach(function (e) {
+                var rect = scrubberBox.getBoundingClientRect();
+                var mousePosition = (e.clientX - rect.left) / rect.width * 100;
+                console.log(mousePosition);
+                scrubberHover.setAttribute('style', 'width: ' + mousePosition + '%');
+            });
 
-        /**
-         * reset scrubberHover width to 0
-         */
-        scrubberMouseouts.forEach(function () {
-            scrubberHover.setAttribute('style', 'width:0');
-        });
+            /**
+             * reset scrubberHover width to 0
+             */
+            scrubberMouseouts.forEach(function () {
+                scrubberHover.setAttribute('style', 'width:0');
+            });
+        }
 
         /**
          * skip to location in track based on scrubber clicks
