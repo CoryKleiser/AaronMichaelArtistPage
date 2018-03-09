@@ -10,7 +10,7 @@
     .ap-togglePlay, .ap-back10, .ap-skip10 {
       @include btn();
       &:hover{
-        color: lighten($darkgreen, 10%);
+        color: lighten($player-color-interface, 20%);
       }
     }
   }
