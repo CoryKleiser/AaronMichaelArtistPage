@@ -69,8 +69,12 @@ $color-media-head:  $offwhite;
   margin-right:auto;
 }
 
+.embed-responsive{
+  @include boxShadow($black);
+}
+
 .tn{
-  padding-top: 25px;
+  padding-top: 60px;
   min-width: 30px;
 }
 

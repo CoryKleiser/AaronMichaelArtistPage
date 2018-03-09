@@ -2,6 +2,7 @@
   background-color: hsla(0, 0%, 100%, .5);
   color: $black;
   border:1px solid $color-main;
+  @include boxShadow($darkgrey, 3px, 3px);
   .panel-heading{
     background-color: $btn-color;
     padding:0;

@@ -53,3 +53,7 @@
     opacity: $opacity;
   }
 }
+
+@mixin boxShadow ($color: $darkergrey, $v: 5px, $h: 5px) {
+  box-shadow: $v $h 5px $color;
+}
