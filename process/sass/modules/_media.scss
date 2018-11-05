@@ -12,8 +12,6 @@ $color-media-head:  $offwhite;
     padding-left: 10px;
     padding-right: 10px;
     margin: 15px 0 10px;
-    border-top: 1px dotted $color-item-border;
-
     .ad{
       padding:30px 5px 5px;
       a{
@@ -26,7 +24,7 @@ $color-media-head:  $offwhite;
         @include rounded(20%);
       }
     }
-    #amazon{
+    .amazon{
       padding:5%;
     }
 
@@ -83,4 +81,8 @@ $color-media-head:  $offwhite;
 }
 #contact img{
   max-width: 70px;
+}
+
+.feature {
+  padding: 60px 0;
 }
